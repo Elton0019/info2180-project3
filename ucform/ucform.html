@@ -13,41 +13,8 @@
     <!--JavaScript-->
    
 	<link href="dashboard.css" rel="stylesheet" type="text/css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
-
-</head>
-<body>
-<div class="wrapper">
-	<header class="header">
-		<div class="hdbox">
-		<flex-box class="flex-box" font-color: white>
-			<h2> Hire Me </h2>
-		</flex-box>
-		</div>
-	</header>
-	<aside class="aside">
-		<div class="input-container">
-		<i class="fa fa-home icon"><a href="dashboard.html"> Home</a></i>
-		</div>
-		<br>
-		<div class="input-container">
-		<i class='fas fa-address-card'><a href="ucform.html"> New User</a></i>
-    	</div>
-		<br>
-		<div class="input-container">
-		<i class='fas fa-edit'><a href=""> New Job</a></i>    	
-		</div>
-		<br>
-		<div class="input-container">
-		<i class='fas fa-power-off'><a href=""> Logout</a></i>    	
-		</div>
-
-
-		
-	</aside>
-<body>
+	</head>
+	
 <div class = "usercreation-form" id="center">
 	<div class="flex-container">
 	
@@ -56,27 +23,27 @@
 		<form name="ucform" action="#" id="ucf" onsubmit="return validateFields()"  method="post">
 	
 			<input type="text" name="firstname" pattern="[A-Za-z]{1,32}" title="Must only contain alpha characters" class="fn" placeholder="First Name">
-			<br><br>
+			<br>
 		
 			<input type="text" name="lastname" class="fn" pattern="[A-Za-z]{1,32}" title="Must only contain alpha characters" placeholder="Last Name">
-			<br><br>
+			<br>
 			
 			<input type="password" class="fn" id="pass1" name="password" pattern= "^(?:(?:(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]))|(?:(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))|(?:(?=.*[0-9])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))|(?:(?=.*[0-9])(?=.*[a-z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))).{8,32}$" placeholder="Password">
-			<br><br>
+			<br>
 			
 			<input type="password" class="fn" id="pass2" name="passwordc" placeholder="Password Confirmation">
-			<br><br>
+			<br>
 			
 			<span>*Your password must be at least eight characters long, contain at least one uppercase letter, one lowercase letter, one number, and one special character.</span>
-			<br><br>
+			<br>
 			
 			<input type="email" name="email" class="fn" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="e.g. mary.jane@example.com"
 			title="Must contain atleast one letter to the left of the @ symbol,at least one character immediately
 			after the '@' symbol, then a period, and atlest one character after the period.">
-			<br><br>
+			<br>
 			
 			<input type="text" class="fn" name="telephonenum" pattern="\d{10}" title="Must be exactly 10 digits " placeholder="e.g. 876-999-8989">
-			<br><br>
+			<br>
 			
 			<input type="hidden" name="hiddenvalue" value="“c7fafc6d1d3ec4671a3beb6423d69090">
 			<input type="submit"  value="Create User">
