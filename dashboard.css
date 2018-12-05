@@ -1,0 +1,104 @@
+html {
+  font-size: 14px;
+  font-family: Comic Sans, Arial, sans-serif;
+}
+
+body {
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+h1{
+  font-color: white;
+  font-family: Comic Sans;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 15rem 10rem 15rem;
+    grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header     header  header  header "
+    "aside      aside   main   main  "
+    "aside      aside   main   main ";
+  max-width: 940px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ccc;
+  @media (max-width: 20rem) {
+    display: flex;
+    flex-direction: height;
+  }
+}
+
+.header {
+  color: white;
+  background-color: black;
+  align-content:center;
+  grid-area: header;
+  padding: 5rem;
+  border-bottom: 1px solid #ccc;
+  @media (max-width: 36rem) {
+    order: 1;
+  }
+}
+
+
+.main {
+  grid-area: main;
+  padding: 1rem;
+  @media (max-width: 36rem) {
+    order: 1;
+  }
+}
+
+.aside {
+  font-size:16px;
+  grid-area:aside;
+  padding: 1rem;
+  margin:20px;
+  background-color: #eee;
+  border-right: 1px solid #ccc;
+  @media (max-width: 36rem) {
+    order: 3;
+    border-right: 0;
+    border-top: 1px solid #ccc;
+
+  }
+}
+
+.flex-container{
+  display:flex;
+}
+
+.flex-box{
+  text-align: center;
+  display:box;
+  align-items: center;
+  border:1px;
+  border-color:black;
+}
+
+.list{
+  float:right;
+  position:relative;
+  bottom: 4px;
+  left: 170px;
+}
+
+.hdbox {
+  position: relative;
+  width: 690px;
+  border: 2px solid white;
+  padding: 5px;
+  margin: 10px;
+}
+
+
+// Setup
+* {
+  box-sizing: border-box;
+}
+
